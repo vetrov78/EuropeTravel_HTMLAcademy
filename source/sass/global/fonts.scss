@@ -1,15 +1,13 @@
 @font-face {
-    font-family: "PT Sans";
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"), url("https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0-ExdGM.woff2") format("woff2");
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), 
+         url("../fonts/Montserrat-Regular.woff") format("woff"), 
+         url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
-  
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"), url("https://fonts.gstatic.com/s/ptsans/v12/jizfRExUiTo99u79B_mh0OOtLQ0Z.woff2") format("woff2");
+
+body {
+    font-family: "Montserrat", "Arial", sans-serif;
 }
