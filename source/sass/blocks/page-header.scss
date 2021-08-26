@@ -1,0 +1,8 @@
+.page-header {
+    position: relative;
+    min-width: 320px;
+  
+    @media (min-width: $tablet-width) {
+      color: aqua;
+    }
+  }
