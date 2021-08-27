@@ -1,8 +1,33 @@
 .page-header {
     position: relative;
     min-width: 320px;
+    height: 100px;
+
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+
+    border: 1px solid rebeccapurple;
   
     @media (min-width: $tablet-width) {
-      color: aqua;
+      color: grey;
     }
+  }
+
+  .page-header__logo {
+    border: 1px dashed blueviolet;
+    width: 432px;
+    display: flex;
+    align-items: center;
+    
+    span{
+        margin-left: auto;
+    }
+  }
+
+  .page-header__navigation-list {
+      list-style-type: none;
+      margin: 0;
+      height: 100%;
+
+      border: 1px dashed green;
   }

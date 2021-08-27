@@ -1,9 +1,12 @@
+//Colors
+$basic-black: #141517;
+$text_black: #2C2E3F;
+$basic-white: #ffffff;
+
+
 // Viewports
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $mobile-width-only: 767px;
 $min-width: 320px;
-
-body {
-    min-width: $desktop-width;
-}
+$max-width: 1920px;
