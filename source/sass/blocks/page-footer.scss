@@ -1,3 +1,39 @@
 .page-footer {
     border:1px dashed red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: $text-footer;
+
+    text-align: start;
+}
+
+.page-footer__item-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: $text-most-black;   
+}
+
+.page-footer__journey {
+    border-right: 1px solid olive;
+}
+
+.page-footer__journey-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.page-footer__journey-columns-item {
+    border: 1px dashed rebeccapurple;
+    text-align: start;
+}
+
+.page-footer__contacts {
+    border-right: 1px solid olive;
+    margin-left: 65px;
+    
 }
