@@ -1,0 +1,48 @@
+.intro {
+    height: fit-content;
+    position: relative;
+}
+
+.intro__background-image {    
+    background-color: $image-background;    
+}
+
+.intro_text-block {
+    border: 2px solid yellow;
+
+    position: absolute;
+    top: 21%;
+    left: 56%;
+    width: 22%;
+
+    color: $basic-white;
+    text-align: start;
+}
+
+.intro__title {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 80px;
+    
+}
+
+.intro_description {
+    
+}
+
+.intro_button {
+    background-color: $on-hover-link;
+    border: none;
+    height: 75px;
+    width: 75%;
+
+    color: $basic-white;
+    font: 700 12px "Montserrat";
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
