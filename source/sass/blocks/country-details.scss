@@ -1,0 +1,29 @@
+.country-details__names-list {   
+    border: 1px dashed royalblue;
+
+    position: relative; 
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    gap: 99px;
+    
+}
+
+.country-details__names-list::after {
+    content: "";
+    background: $on-hover-link;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 30%;
+}
+
+.country-details__names-item {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $text-tabs;
+    //border-bottom: 1px solid $text-tabs;
+}

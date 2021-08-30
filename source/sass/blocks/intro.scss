@@ -1,40 +1,63 @@
 .intro {
     height: fit-content;
-    position: relative;
+    position: relative; 
+    color: $basic-white
 }
 
-.intro__background-image {    
-    background-color: $image-background;    
+.intro__background-image {   
+    background-color: $image-background;  
+    width: 100%;  
+    height: auto;
+    min-height: 235px;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+    max-width: 100%;
 }
 
-.intro_text-block {
-    border: 2px solid yellow;
+.intro__text-block {
+    border: 5px solid rebeccapurple;
 
-    position: absolute;
+    display: inline-block;
+    position: absolute;    
     top: 21%;
     left: 56%;
-    width: 22%;
+    max-width: 412px;
 
     color: $basic-white;
     text-align: start;
+
+    @media (max-width:$tablet-width) {
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+
+    }
 }
 
 .intro__title {
     font-size: 55px;
     font-weight: 600;
-    line-height: 80px;
+    line-height: 80px; 
+    margin: 0;
     
+    @media (max-width:$tablet-width) {
+        font-size: 30px;
+        line-height: 150%;
+    }
 }
 
-.intro_description {
-    
+.intro__description {
+    line-height: 170%;
+    margin-top: 30px;
 }
 
-.intro_button {
+.intro__button {
     background-color: $on-hover-link;
     border: none;
     height: 75px;
     width: 75%;
+    padding: 0 40px;
 
     color: $basic-white;
     font: 700 12px "Montserrat";
@@ -45,4 +68,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width:$tablet-width) {
+        margin: auto;
+        font: 500 10px "Montserrat";
+        line-height: 12px;
+    }
 }

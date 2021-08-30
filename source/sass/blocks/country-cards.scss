@@ -1,3 +1,10 @@
+.country-cards {
+    border: 3px dashed aqua;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
 .country-cards__title {
     position: relative;
     text-align: start;
@@ -19,15 +26,7 @@
     width: 30%;
 }
 
-.country-cards__description {
-    text-align: start;
-    margin-left: 375px;
-    width: 450px;
-}
-
 .country-cards__photos-list {
-    max-width: 1200px;
-    margin: auto;
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
