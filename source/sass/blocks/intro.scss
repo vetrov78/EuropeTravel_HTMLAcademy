@@ -70,6 +70,7 @@
     align-items: center;
 
     @media (max-width:$tablet-width) {
+        height: 50px;
         margin: auto;
         font: 500 10px "Montserrat";
         line-height: 12px;
