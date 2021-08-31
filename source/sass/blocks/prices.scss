@@ -5,47 +5,148 @@
     gap: 30px;
 
     max-width: 1200px;
-    margin: auto;
+    margin: auto;    
 }
 
 .prices__tour-info {
     border: 1px solid $text-tabs;
     border-radius: 6px;
+    text-align: start;
+    padding: 40px 30px 30px;
 
+    &:hover {
+        border: 3px solid $on-hover-link;
+        padding: 38px 28px 28px;
+
+        .prices_title-price-container {
+            color: $on-hover-link;
+        }
+
+        .prices__tour-included-item::before {
+            background-image: url("../img/Breadscrumb.svg");
+        }
+
+        .prices__promo::after {
+            background: $on-hover-link;
+            opacity: 0.5;
+        }
+    }
+}
+
+.prices_title-price-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $tablet-width) {
+        
+    }
+}
+
+.prices__tour-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.prices__tour-price {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+}  
+
+.prices__promo {
+    line-height: 24px;
+    position: relative;
+}
+
+.prices__promo::after {
+    content: "";
+    background: $text-tabs;
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    height: 1px;
+    width: 310px;
 }
 
 .prices__tour-included-item {
    position: relative;
    line-height: 32px;
    text-align: start;
+   padding-left: 30px;
    margin-top: 15px;
-   padding: 0 30px 0 60px;
+
+   &:first-child {
+        margin-top: 59px;
+    }
 }
 
 .prices__tour-included-item::before {
     content: "";
     position: absolute;
-    background-image: url("../img/li_breadscrumb.svg");
-    height: 22px;
-    width: 22px;
-    left: -45px;
+    background-image: url("../img/Breadscrumb_red.svg");
+    width: 14px;
+    height: 12px;    
+    left: 0;
+    top: 10px;
 }
 
 .prices__proposal {
     border: 1px dashed palegoldenrod;
     box-sizing: border-box;
+    text-align: start;
+    margin-left: 90px;
 }
 
-.prices__proposal_phone {
+.prices__proposal-title {
     position: relative;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 90px;
+}
+
+.prices__proposal-text {
+    line-height: 170%;
+}
+
+.prices__proposal-title::after {
+    content: "";
+    background: $on-hover-link;
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 175px;
+    height: 2.92px;
+}
+
+.prices__proposal-contact-phrase {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    color: $text-most-black;
     text-align: center;
 }
 
-.prices__proposal_phone::before {
+.prices__proposal-phone {
+    position: relative;
+    text-align: center;
+
+    & a {
+        text-decoration: none;
+        color: $basic-black;
+
+        &:hover {
+            color: $on-hover-link;
+            text-decoration: underline;
+        }
+    }
+}
+
+.prices__proposal-phone::before {
     content: "";
     position: absolute;
     background-image: url("../img/Phone_logo_red.svg");
-    height: 30px;
-    width: 30px;
-    left: -45px;
+    width: 17px;
+    height: 24px;    
+    left: 0;
 }

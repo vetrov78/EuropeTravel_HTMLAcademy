@@ -43,6 +43,7 @@
 
     @media (max-width: $tablet-width) {
         position: absolute;
+        z-index: 1;
         top: 50px;
         right: 0;
         width: 320px;
