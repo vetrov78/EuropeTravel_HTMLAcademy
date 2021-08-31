@@ -32,6 +32,10 @@
     position: relative;
 }
 
+.country-details__names-item.countries-details__names-item--active {
+    color: $on-hover-link;
+}
+
 .country-details__description-item {
     border: 1px dashed firebrick;
 

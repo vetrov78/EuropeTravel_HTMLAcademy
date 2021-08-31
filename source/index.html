@@ -33,23 +33,22 @@
         </div>      
         <ul class="page-header__navigation-list">
           <li class="page-header__navigation-item">
-            <span>О путешествии</span>
+            <a href="#about">О путешествии</a>
             <svg class="page-header__navigation-item-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
             </svg>
           </li>
           <li class="page-header__navigation-item">
-            <span>Цены</span>
+            <a href="#prices">Цены</span>
             <svg class="page-header__navigation-item-arrow" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
             </svg>
           </li>
         </ul>        
       </nav>
-      <div class="page-header__contact">
-        <img src="img/Phone_logo.svg" width="30" height="30" alt="phone logo">
+      <p class="page-header__contact-container">
         <a href="tel:749978468446">+7 (499) -784-684-46</a>
-      </div>
+      </p>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Путешествие по Европе</h1>
@@ -58,42 +57,57 @@
           <div class="intro__text-block">
             <h2 class="intro__title">Путешествие по Европе</h2>
             <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-            <button class="intro__button">
+            <a class="intro__button" href="#tabs">
               <span>смотреть тур</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-            </button>
+            </a>
           </div>       
       </section>
-      <section class="country-cards">
+      <section class="country-cards" id="about">
         <h2 class="country-cards__title">Места посещения</h2>
         <p class="country-cards__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         <ul class="country-cards__photos-list">
           <li class="country-cards__photos-list-item">
             <img class="country-cards__photo" src="img/Greek.jpg" alt="Фото Греции">
             <p class="country-cards__item-title">Греция</p>
+            <div class="country-cards__image-mask">
+              <a class="country-cards__image-mask-button" href="#Grece">смотреть подробнее</a>
+            </div>
           </li>
           <li class="country-cards__photos-list-item">
             <img class="country-cards__photo" src="img/Albania.jpg" alt="Фото Албании">
             <p class="country-cards__item-title">Албания</p>
+            <div class="country-cards__image-mask">
+              <a class="country-cards__image-mask-button" href="#Albania">смотреть подробнее</a>
+            </div>
           </li>
           <li class="country-cards__photos-list-item">
             <img class="country-cards__photo" src="img/Makedonia.jpg" alt="Фото Македонии">
             <p class="country-cards__item-title">Македония</p>
+            <div class="country-cards__image-mask">
+              <a class="country-cards__image-mask-button" href="#Makedonia">смотреть подробнее</a>
+            </div>
           </li>
           <li class="country-cards__photos-list-item">
             <img class="country-cards__photo" src="img/Montenegro.jpg" alt="Фото Черногории">
             <p class="country-cards__item-title">Черногория</p>
+            <div class="country-cards__image-mask">
+              <a class="country-cards__image-mask-button" href="#Montenegro">смотреть подробнее</a>
+            </div>
           </li>
           <li class="country-cards__photos-list-item">
             <img class="country-cards__photo" src="img/Croatia.jpg" alt="Фото Хорватии">
             <p class="country-cards__item-title">Хорватия</p>
+            <div class="country-cards__image-mask">
+              <a class="country-cards__image-mask-button" href="#Croatia">смотреть подробнее</a>
+            </div>
           </li>
         </ul>        
       </section>
-      <section class="country-details">
+      <section class="country-details" id="tabs">
           <img class="country-details__background-map" width="1444" height="1089" src="./img/Background_map.svg" alt="Фоновая карта Европы">        
           <ul class="country-details__names-list">
             <li class="country-details__names-item countries-details__names-item--active">Греция</li>
@@ -175,7 +189,7 @@
             </li>
           </ul>
       </section>
-      <section class="prices">
+      <section class="prices" id="prices">
         <div class="prices__tour-info">
           <div class="prices_title-price-container">
             <h2 class="prices__tour-title">Комплексный</h2>

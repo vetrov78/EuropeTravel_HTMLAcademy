@@ -3,30 +3,40 @@
 
     max-width: 1200px;
     margin: auto;
+    margin-top: 200px;
+    text-align: start;
 }
 
 .country-cards__title {
     position: relative;
     text-align: start;
     margin: 0;
-    margin-left: 375px;
     width: 400px;
-    font-size: 55px;
     font-weight: 600;
+    font-size: 55px;
     line-height: 80px;
+    letter-spacing: -1.245px;
 }
 
 .country-cards__title::after {
     content: "";
     background: $on-hover-link;
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 0;
     height: 4px;
     width: 30%;
 }
 
+.country-cards__description {
+    margin-top: 64px;
+    width: 328px;
+    color: $text-ordinary;
+    letter-spacing: -0.466667px;
+}
+
 .country-cards__photos-list {
+    margin-top: 55px;
     display: flex;
     gap: 60px;
     flex-wrap: wrap;
@@ -36,7 +46,13 @@
 .country-cards__photos-list-item {
     border: 1px solid orange;
 
-    position: relative;    
+    position: relative;
+    
+    &:hover .country-cards__image-mask{
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
 }
 
 .country-cards__photo {
@@ -53,10 +69,32 @@
     margin: 0;
     background-color: $basic-white;
     width: 215px;
-    
+    text-align: center;
     font-size: 24px;
     font-weight: 500;
     line-height: 29px;
-    padding: 16px 0;
-    
+    padding: 16px 0;    
+}
+
+.country-cards__image-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $on-hover-mask;
+    display: none;
+}
+
+a.country-cards__image-mask-button {
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 30px 25px;
+    border: 1px solid $basic-white;
+    color: $basic-white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
