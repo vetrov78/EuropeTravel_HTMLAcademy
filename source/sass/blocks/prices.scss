@@ -1,0 +1,14 @@
+.prices {
+    border: 3px solid khaki;
+    display: grid;
+    grid-template-columns: minmax(288px, 370px) minmax(288px, 370px) 1fr;
+    gap: 30px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+.prices__tour-info {
+    border: 1px dashed olivedrab;
+
+}

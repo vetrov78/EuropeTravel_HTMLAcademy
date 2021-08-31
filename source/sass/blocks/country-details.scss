@@ -1,9 +1,17 @@
 .country-details {
     border: 3px solid chartreuse;
 
+    position: relative;
     max-width: 1200px;
     margin: auto;
     text-align: start;
+}
+
+.country-details__background-map {
+ position: absolute;
+ top: 20px;
+ left: 50%;
+ transform: translate(-50%);
 }
 
 .country-details__names-list {   
