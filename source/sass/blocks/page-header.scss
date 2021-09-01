@@ -1,6 +1,4 @@
 .page-header {
-    border: 2px solid yellowgreen;
-
     position: relative;
     min-width: 320px;
     height: 100px;
@@ -32,9 +30,7 @@
     text-align: start;
 }
 
-.page-header__navigation-list {  
-    border:1px dashed salmon ;
-
+.page-header__navigation-list {     
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -81,6 +77,10 @@
     & a {
         text-decoration: none;
         color: $text-most-black;
+
+        &:hover {
+            color: $on-hover-link;
+        }
     }
 }
 
@@ -109,7 +109,7 @@
         }
     }
     
-    @media (max-width: $tablet-width) {
+    @media (max-width: 1023px) {
         display: none;
     }
 }
@@ -147,7 +147,7 @@
     right: 0;
     top: 0;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width-only) {
         display: none;
     }
 }

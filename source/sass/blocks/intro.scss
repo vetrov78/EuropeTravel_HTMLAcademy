@@ -16,8 +16,6 @@
 }
 
 .intro__text-block {
-    border: 5px solid rebeccapurple;
-
     display: inline-block;
     position: absolute;    
     top: 21%;
@@ -27,7 +25,7 @@
     color: $basic-white;
     text-align: start;
 
-    @media (max-width:$tablet-width) {
+    @media (max-width: $tablet-width) {
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -41,7 +39,7 @@
     line-height: 80px; 
     margin: 0;
     
-    @media (max-width:$tablet-width) {
+    @media (max-width: $tablet-width) {
         font-size: 30px;
         line-height: 150%;
     }
@@ -52,27 +50,16 @@
     margin-top: 30px;
 }
 
-.intro__button {
-    background-color: $on-hover-link;
-    text-decoration: none;
-    height: 75px;
+.intro__button {    
+    text-decoration: none;    
     width: 75%;
-    padding: 0 40px;
-
-    color: $basic-white;
-    font: 700 12px "Montserrat";
-    line-height: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    padding: 0 40px;   
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width:$tablet-width) {
-        height: 50px;
-        margin: auto;
-        font: 500 10px "Montserrat";
-        line-height: 12px;
+    @media (max-width: $tablet-width) {
+        
     }
 }
