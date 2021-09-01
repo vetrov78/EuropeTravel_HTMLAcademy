@@ -12,6 +12,10 @@
  top: 20px;
  left: 50%;
  transform: translate(-50%);
+
+ @media (max-width:$tablet-width) {
+    display: none;
+}
 }
 
 .country-details__names-list {   
@@ -22,6 +26,10 @@
     gap: 99px;
     padding-bottom: 15px;
     border-bottom: 1px solid $text-tabs;
+
+    @media (max-width:$tablet-width) {
+        margin-left: 21px;;
+    }
 }
 
 .country-details__names-item {
@@ -45,6 +53,14 @@
     grid-template-areas: "title photo"
                          "text photo"
                          "button photo";
+                
+    @media (max-width:$tablet-width) {
+        grid-template-areas: "title"
+                             "text"
+                             "button"
+                             "photo";
+        text-align: center;
+    }
 }
 
 .country-details__description-title {
@@ -68,39 +84,33 @@
     left: 0;
     height: 2.92px;
     width: 175px;
+
+    @media (max-width:$tablet-width) {
+        display: none;
+    }
 }
 
 .country-details__description-text {
     grid-area: text;
-
     margin-top: 53px;
     margin-bottom: 0;
     width: 370px;
-
     color: $text-ordinary;
     letter-spacing: -0.466667px;
+
+    @media screen {
+        width: 100%;
+        margin: 21px;
+    }
 }
 
 .country-details__description-button {
     grid-area: button;
-
-    margin-top: 50px;
-    background-color: $on-hover-link;
-    border: none;
-    height: 75px;
-    width: 250px;
-
-    color: $basic-white;
-    font: 700 12px "Montserrat";
-    line-height: 15px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    margin-top: 50px;       
+    width: 250px;    
 
     @media (max-width:$tablet-width) {
-        margin: auto;
-        font: 500 10px "Montserrat";
-        line-height: 12px;
-        height: 50px;
+        margin: auto;        
     }
 }
 

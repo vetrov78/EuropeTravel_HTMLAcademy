@@ -11,6 +11,23 @@
     overflow: hidden;
   }
 
+  .btn {
+    background-color: $on-hover-link;
+    border: none;
+    color: $basic-white;
+    height: 75px;
+    font: 700 12px "Montserrat";
+    line-height: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    @media (max-width: $tablet-width) {
+      height: 50px;
+      font: 500 10px "Montserrat";
+      line-height: 12px;      
+    }
+  }
+
   ul {
     list-style-type: none;
     padding: 0;
