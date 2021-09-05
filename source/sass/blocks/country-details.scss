@@ -2,24 +2,34 @@
     border: 3px solid chartreuse;
 
     position: relative;
-    max-width: 1200px;
+    max-width: 1444px;
     margin: auto;
+    margin-top: 124px;
+    padding-left: 137px;
+    overflow: hidden;
+
     text-align: start;
+
+    @media (max-width:$tablet-width) {
+        margin-top: 95px;
+        padding-left: 0;
+    }
 }
 
 .country-details__background-map {
  position: absolute;
- top: 20px;
- left: 50%;
+ top: 120px;
+ left: 45%;
  transform: translate(-50%);
+ overflow: hidden;
 
  @media (max-width:$tablet-width) {
     display: none;
 }
 }
 
-.country-details__names-list {   
-    position: relative; 
+.country-details__names-list {  
+    position: absolute; 
     width: min-content;
     display: flex;
     justify-content: start;
@@ -28,7 +38,7 @@
     border-bottom: 1px solid $text-tabs;
 
     @media (max-width:$tablet-width) {
-        margin-left: 21px;;
+        margin-left: 21px;        
     }
 }
 
@@ -44,9 +54,12 @@
     color: $on-hover-link;
 }
 
-.country-details__description-item {
-    border: 1px dashed firebrick;
+.country-details__description-list {
+    border: 1px dashed indianred;
+    margin-top: 104px;
+}
 
+.country-details__description-item {
     position: relative;
     max-width: 900px;
     display: grid;
@@ -99,8 +112,7 @@
     letter-spacing: -0.466667px;
 
     @media (max-width:$tablet-width) {
-        border: 1px solid yellowgreen;
-        width: 100%;
+        width: auto;
         margin: 21px 21px 0;
     }
 }
@@ -116,22 +128,24 @@
     }
 }
 
-.country-details__photo {
+.country-details__photo-container {
     grid-area: photo;
+    text-align: end;
+}
 
+.country-details__photo {
     @media (max-width: $tablet-width) {
-        border: 1px solid rosybrown;
-
         height: 415px;
         width: 100%;
         margin-top: 30px;
     }
 }
 
-.country-details__feedback {
+.country-details__feedback-item {
+    border: 1px solid indigo;
     position: absolute;
-    left: 788px;
-    top: 114px;
+    right: 15%;
+    top: 220px;
     background-color: $basic-white;
     width: 382px;
     padding-left: 30px;
