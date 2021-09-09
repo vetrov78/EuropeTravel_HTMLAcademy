@@ -1,14 +1,18 @@
 .any-questions {
     position: relative;
-    max-width: 1170px;
-    margin: auto;
-    text-align: start;    
+    max-width: 1170px;    
+    margin: 140px auto auto;
+    text-align: start;   
+    
+    @media (max-width:$tablet-width) {
+        margin-top: 110px;
+    }
 }
 
 .any-questions__form {
     position: absolute;
     width: 658px;
-    left: 43%;
+    right: 1%;
     top: 70px;
     background-color: $basic-white;
     text-align: center;

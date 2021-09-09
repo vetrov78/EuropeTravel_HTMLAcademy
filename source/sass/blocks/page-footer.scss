@@ -9,6 +9,8 @@
     text-align: start;
 
     @media (max-width: $tablet-width) {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     @media (max-width: $mobile-width) {
@@ -25,7 +27,12 @@
 }
 
 .page-footer__routes {
-    flex: 0 0 387px;
+    flex: 0 .3 380px;
+    border-right: 1px solid $separate-line-gray;
+
+    @media (max-width: $mobile-width) {
+        border: none;    
+    }
 }
 
 .page-footer__routes-columns {
@@ -55,28 +62,38 @@
 
 .page-footer__contacts {
     padding-left: 65px;
-    flex: 0 0 332px;
+    flex: 0 .3 330px;
 
     @media (max-width: $tablet-width) {
-        border: none;
+        flex: 0 0 281px;
     }
     @media (max-width: $mobile-width) {
         margin-left: 0;
+        border-left: none;
+        border-top: 1px solid $separate-line-gray;
     }
 }
 
 .page-footer__contacts-item {
     margin-top: 25px;
+    display: flex;
+    align-items: center;    
 
     & a {
         text-decoration: none;
         color: $basic-black;
+        margin-left: 15px;
+    }
 
         @media (max-width:$tablet-width) {
             font-size: 18px;
         }
+
+        &:hover {
+            color: $on-hover-link;
+            text-decoration: underline;
+        }
     }
-}
 
 .page-footer__contacts-item--mail {
     & a {
@@ -93,12 +110,17 @@
 
 .page-footer__corporate-promo {
     padding-left: 55px;
-    flex: 0 0 320px;
+    flex: 0 .3 320px;
+    border-left: 1px solid $separate-line-gray;
 
     @media (max-width: $tablet-width) {
+        flex: 0 .3 726px;
+        border-left: none;
+        border-top: 1px solid $separate-line-gray;
         text-align: center;
         margin-top: 30px;
         padding-top: 30px;
+        padding-left: 0;
     }
 }
 
