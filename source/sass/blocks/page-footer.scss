@@ -1,29 +1,17 @@
 .page-footer {
-    border:1px dashed red;
-
-    display: grid;
-    grid-template-areas: "routes contacts promo";    
-    grid-template-columns: minmax(min-content, 357px) minmax(min-content, 397px) minmax(min-content, 375px);
-    margin: auto;
-    
+    display: flex;    
+    max-width: 1170px;
+    margin: 160px auto 74px;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     color: $text-footer;
-
     text-align: start;
 
     @media (max-width: $tablet-width) {
-        grid-template-areas: "routes contacts"
-                             "promo promo";
-        grid-template-columns: repeat(2, 1fr);
     }
 
     @media (max-width: $mobile-width) {
-        grid-template-areas: "routes"
-                             "contacts"
-                             "promo";
-        grid-template-columns: 1fr;
         text-align: center;
     }
 }
@@ -37,22 +25,22 @@
 }
 
 .page-footer__routes {
-    border-right: 1px solid olive;
-    grid-area: routes;
+    flex: 0 0 387px;
 }
 
 .page-footer__routes-columns {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
 
     @media (max-width: $mobile-width) {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-.page-footer__routes-columns-item {
-    border: 1px dashed rebeccapurple;
+.page-footer__routes-item {
     text-align: start;
+    margin-top: 10px;
 
     @media (max-width: $mobile-width) {
         text-align: center;
@@ -66,9 +54,8 @@
 }
 
 .page-footer__contacts {
-    border-right: 1px solid olive;
-    margin-left: 65px;
-    grid-area: contacts;
+    padding-left: 65px;
+    flex: 0 0 332px;
 
     @media (max-width: $tablet-width) {
         border: none;
@@ -78,13 +65,45 @@
     }
 }
 
+.page-footer__contacts-item {
+    margin-top: 25px;
+
+    & a {
+        text-decoration: none;
+        color: $basic-black;
+
+        @media (max-width:$tablet-width) {
+            font-size: 18px;
+        }
+    }
+}
+
+.page-footer__contacts-item--mail {
+    & a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.page-footer__contacts-item--phone {
+    & a {
+        line-height: 32px;
+    }
+}
+
 .page-footer__corporate-promo {
-    grid-area: promo;
+    padding-left: 55px;
+    flex: 0 0 320px;
 
     @media (max-width: $tablet-width) {
         text-align: center;
-        border-top: 1px solid olive;
         margin-top: 30px;
         padding-top: 30px;
     }
+}
+
+.page-footer__corporate-promo-text {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 170%;
 }
