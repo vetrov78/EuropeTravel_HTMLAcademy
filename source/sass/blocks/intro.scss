@@ -21,6 +21,7 @@
     top: 21%;
     left: 56%;
     max-width: 412px;
+    min-width: 288px;
 
     color: $basic-white;
     text-align: start;
@@ -29,7 +30,6 @@
         left: 50%;
         transform: translate(-50%);
         text-align: center;
-
     }
 }
 
@@ -43,11 +43,21 @@
         font-size: 30px;
         line-height: 150%;
     }
+
+    @media (max-width: $mobile-width) {
+        font-size: 24px;
+    }
 }
 
 .intro__description {
     line-height: 170%;
     margin-top: 30px;
+    
+    @media (max-width: $mobile-width) {
+        position: absolute;
+        color: $text-most-black;
+        top: 174px;
+    }
 }
 
 .intro__button {    
@@ -61,5 +71,10 @@
 
     @media (max-width: $tablet-width) {
         
+    }
+
+    @media (max-width: $mobile-width) {
+        position: absolute;
+        top: 320px;
     }
 }

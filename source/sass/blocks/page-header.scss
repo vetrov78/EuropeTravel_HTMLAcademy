@@ -103,10 +103,6 @@
 
     &:hover {
         & a {color: $on-hover-link;}
-
-        &::before {
-            background-image: url("../img/Phone_logo_red.svg");
-        }
     }
     
     @media (max-width: 1023px) {
@@ -117,7 +113,7 @@
 .page-header__contact-container::before {
     position: absolute;
     content: "";
-    background-image: url("../img/Phone_logo.svg");
+    background-image: url("../img/Phone_logo_red.svg");
     width: 30px;
     height: 30px;
     left: -36px;
