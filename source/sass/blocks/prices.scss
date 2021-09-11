@@ -41,6 +41,10 @@
     @media (max-width:$tablet-width) {
         flex-basis: 248px;;
     }
+
+    @media (max-width:$mobile-width) {
+        flex-basis: 288px;
+    }
 }
 
 .prices_title-price-container {
@@ -123,6 +127,8 @@
 }
 
 .prices__proposal {
+    border: 1px solid slategrey;
+    
     flex: 0 0.3 310px;
     box-sizing: border-box;
     text-align: start;
@@ -132,6 +138,10 @@
         order: -1;
         text-align: center;
         flex-basis: 726px;
+    }
+
+    @media (max-width:$mobile-width) {
+        flex-basis: 288px;
     }
 }
 
