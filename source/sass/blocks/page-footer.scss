@@ -16,7 +16,7 @@
     @media (max-width: $mobile-width) {
         text-align: center;
         flex-direction: column;
-        margin-top: 60px;
+        margin: 60px 16px 26px;
     }
 }
 
@@ -80,11 +80,10 @@
         border-left: none;
         border-top: 1px solid $separate-line-gray;
         flex-basis: auto;
-
     }
 }
 
-.page-footer__contacts-item {
+.page-footer__contacts-item { 
     margin-top: 25px;
     display: flex;
     align-items: center;    

@@ -1,12 +1,9 @@
 .page-header {
     position: relative;
+    display: flex;
     min-width: 320px;
     height: 100px;
     color: $text-most-black;
-
-    display: grid;
-    grid-template-columns: 1fr min-content;
-    margin: auto;
 
     @media (max-width: $tablet-width) {
         width: 100%;
@@ -21,13 +18,25 @@
     color: $text-most-black;
 
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    @media(max-width:$tablet-width){
+        height: 50px;
+    }
 }
 
 .page-header__logo-link {
-    display: block;
-    min-width: 432px;  
+    display: block;  
     text-align: start;
+
+    @media(max-width:$tablet-width){
+        width:auto;
+    }
+}
+
+.page-header__navigation-list-container {
+    flex: 0 1 787px;
 }
 
 .page-header__navigation-list {     
@@ -36,6 +45,7 @@
     padding: 0;
     
     display: flex;
+    justify-content: end;
     white-space: nowrap; 
 
     @media (max-width: $tablet-width) {
@@ -129,6 +139,7 @@
         display: none;
     }
 }
+
 .page-header__navigation--opened .page-header__navigation-open-icon {
     display: none;
 }

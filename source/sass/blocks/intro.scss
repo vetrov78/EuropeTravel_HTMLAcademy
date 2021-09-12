@@ -27,8 +27,10 @@
     text-align: start;
 
     @media (max-width: $tablet-width) {
+        top: 60px;
         left: 50%;
         transform: translate(-50%);
+        width: 398px;
         text-align: center;
     }
 }
@@ -51,6 +53,7 @@
 
 .intro__description {
     line-height: 170%;
+    letter-spacing: -0.466667px;
     margin-top: 30px;
     
     @media (max-width: $mobile-width) {
@@ -64,13 +67,14 @@
     text-decoration: none;    
     width: 75%;
     padding: 0 40px;   
+    margin: auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     @media (max-width: $tablet-width) {
-        
+        width: 170px;
     }
 
     @media (max-width: $mobile-width) {
