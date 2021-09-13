@@ -5,7 +5,6 @@
     margin-top: 124px;
     padding-left: 137px;
     overflow: hidden;
-
     text-align: start;
 
     @media (max-width:$tablet-width) {
@@ -159,6 +158,9 @@
         top: auto;
         bottom: 0;
         text-align: start;
+        padding: 30px;
+        box-sizing: border-box;
+        width: 50%;
     }
 }
 
@@ -185,6 +187,7 @@
     letter-spacing: 0.408333px;
     margin-right: 30px;
 }
+
 .country-feedback__person-container {
     display: flex;
     flex-direction: row;

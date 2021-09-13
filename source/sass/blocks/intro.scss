@@ -1,7 +1,8 @@
 .intro {
     height: fit-content;
     position: relative; 
-    color: $basic-white
+    color: $basic-white;
+    display: none;
 }
 
 .intro__background-image {   
@@ -48,6 +49,8 @@
 
     @media (max-width: $mobile-width) {
         font-size: 24px;
+        margin: auto;
+        width: 75%;
     }
 }
 
@@ -59,7 +62,8 @@
     @media (max-width: $mobile-width) {
         position: absolute;
         color: $text-most-black;
-        top: 174px;
+        top: 164px;
+        width: 95%;
     }
 }
 
