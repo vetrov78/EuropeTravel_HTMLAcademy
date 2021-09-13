@@ -3,6 +3,7 @@
     justify-content: space-between;
     gap: 2.5%;
     margin: 233px auto auto;
+    padding: 0 10px;
     max-width: 1170px;
        
     
@@ -10,19 +11,21 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 80px auto auto;
+        padding: 0;
     }
 }
 
 .prices__tour-info {
     position: relative;
-    flex: 0 0.3 310px;
+    flex: 0 0.35 310px;
     border: 1px solid $text-tabs;
     border-radius: 6px;
     text-align: start;
     padding: 40px 2.5% 130px;
+    
 
     &:hover {
-        border: 1px solid $on-hover-link;
+        border: 3px solid $on-hover-link;
 
         .prices_title-price-container {
             color: $on-hover-link;
@@ -39,11 +42,13 @@
     }
 
     @media (max-width:$tablet-width) {
-        flex-basis: 248px;;
+        flex-basis: 248px;
+        margin-top: 40px;
     }
 
     @media (max-width:$mobile-width) {
         flex-basis: 288px;
+        margin-top: 30px;
     }
 }
 
@@ -122,17 +127,15 @@
 
     @media (max-width: $tablet-width) {
       width: 288px;  
-      bottom: 0;
+      bottom: -1px;
     }
 }
 
-.prices__proposal {
-    border: 1px solid slategrey;
-    
+.prices__proposal {    
     flex: 0 0.3 310px;
     box-sizing: border-box;
     text-align: start;
-    margin-left: 5%;
+    margin-left: 3vw;
 
     @media (max-width: $tablet-width) {
         order: -1;
@@ -197,10 +200,15 @@
 .prices__proposal-phone {
     position: relative;
     text-align: center;
+    margin: 0;
     margin-top: 13px;
 
     @media (max-width:$tablet-width) {
         margin-top: 10px;
+    }
+
+    @media(max-width:$mobile-width){
+        margin-bottom: 10px;
     }
 
     & a {        

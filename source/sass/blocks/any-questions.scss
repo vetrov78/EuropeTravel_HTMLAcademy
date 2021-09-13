@@ -1,7 +1,9 @@
 .any-questions {
+    display: none;
+    max-width: 1200px;    
     position: relative;
-    max-width: 1170px;    
     margin: 140px auto auto;
+    padding: 0 15px;
     text-align: start;   
     
     @media (max-width:$tablet-width) {
