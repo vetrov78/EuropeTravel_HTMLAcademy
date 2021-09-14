@@ -109,8 +109,9 @@
           </li>
         </ul>        
       </section>
-      <section class="country-details" id="tabs">
-          <img class="country-details__background-map" width="1444" height="1089" src="./img/Background_map.svg" alt="Фоновая карта Европы">        
+      <img class="page-main__background-map" width="1444" height="1089" src="./img/Background_map.svg" alt="Фоновая карта Европы">      
+      <section class="country-details" id="tabs">  
+        <div class="country-details__names-list-container">
           <ul class="country-details__names-list">
             <li class="country-details__names-item countries-details__names-item--active">Греция</li>
             <li class="country-details__names-item">Албания</li>
@@ -118,92 +119,92 @@
             <li class="country-details__names-item">Черногория</li>
             <li class="country-details__names-item">Хорватия</li>
           </ul>
-          <ul class="country-details__description-list">
-            <li class="country-details__description-item">
-              <h2 class="country-details__description-title">Греция</h2>
-              <p class="country-details__description-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
-              <button class="country-details__description-button btn">купить тур сейчас</button>
-              <picture class="country-details__photo-container">
-                <source media="(max-width: 1023px)" srcset="./img/Greek_wide.jpg">
-                <img class="country-details__photo" width="430" height="596" src="./img/Greek_feedback.jpg" alt="Фото Греции">
-              </picture>              
-            </li>
-            <li class="country-details__description-item visually-hidden">
-              <h2 class="country-details__description-title">Албания</h2>
-              <p class="country-details__description-text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
-              <button class="country-details__description-button btn">купить тур сейчас</button>
-              <picture class="country-details__photo-container">
-                <img class="country-details__photo" width="430" height="596" src="./img/Albania_feedback.jpg" alt="Фото Албании">
-              </picture>              
-            </li>
-            <li class="country-details__description-item visually-hidden">
-              <h2 class="country-details__description-title">Македония</h2>
-              <p class="country-details__description-text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
-              <button class="country-details__description-button btn">купить тур сейчас</button>
-              <picture class="country-details__photo-container">
-                <img class="country-details__photo" width="430" height="596" src="./img/Makedonia_feedback.jpg" alt="Фото Македонии">
-              </picture>              
-            </li>
-            <li class="country-details__description-item visually-hidden">
-              <h2 class="country-details__description-title">Черногория</h2>
-              <p class="country-details__description-text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
-              <button class="country-details__description-button btn">купить тур сейчас</button>
-              <picture class="country-details__photo-container">
-                <img class="country-details__photo" width="430" height="596" src="./img/Montenegro_feedback.jpg" alt="Фото Черногории">
-              </picture>              
-            </li>
-            <li class="country-details__description-item visually-hidden">
-              <h2 class="country-details__description-title">Хорватия</h2>
-              <p class="country-details__description-text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
-              <button class="country-details__description-button btn">купить тур сейчас</button>
-              <picture class="country-details__photo-container">
-                <img class="country-details__photo" width="430" height="596" src="./img/Croatia_feedback.jpg" alt="Фото Хорватии">
-              </picture>              
-            </li>
-          </ul>
-
-          <ul class="country-detail__feedback-list">
-            <li class="country-details__feedback-item">
-              <h3 class="country-details__feedback-title">Отзывы</h3>
-              <p class="country-details__feedback-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
-              <div class="country-feedback__person-container">
-                <img class="country-details__feedback-face" width="38" height="38" src="./img/Greek_face.jpg" alt="Фото пользователя Влада Голицина">
-                <p class="country-details__feedback-name">Влада Голицина</p>
-              </div>
-            </li>
-            <li class="country-details__feedback-item">
-              <h3 class="country-details__feedback-title">Отзывы</h3>
-              <p class="country-details__feedback-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
-              <div class="country-feedback__person-container">
-                <img class="country-details__feedback-face" width="38" height="38" src="./img/Albania_face.jpg" alt="Фото пользователя Маришка">
-                <p class="country-details__feedback-name">Маришка</p>
-              </div>
-            </li>
-            <li class="country-details__feedback-item">
-              <h3 class="country-details__feedback-title">Отзывы</h3>
-              <p class="country-details__feedback-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
-              <div class="country-feedback__person-container">
-                <img class="country-details__feedback-face" width="38" height="38" src="./img/Makedonia_face.jpg" alt="Фото пользователя ">
-                <p class="country-details__feedback-name">Михаил Кузьмин</p>
-              </div>
-            </li>
-            <li class="country-details__feedback-item">
-              <h3 class="country-details__feedback-title">Отзывы</h3>
-              <p class="country-details__feedback-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
-              <div class="country-feedback__person-container">
-                <img class="country-details__feedback-face" width="38" height="38" src="./img/Montenegro_face.jpg" alt="Фото пользователя ">
-                <p class="country-details__feedback-name">Анастасия Мей</p>
-              </div>
-            </li>
-            <li class="country-details__feedback-item">
-              <h3 class="country-details__feedback-title">Отзывы</h3>
-              <p class="country-details__feedback-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
-              <div class="country-feedback__person-container">
-                <img class="country-details__feedback-face" width="38" height="38" src="./img/Croatia_face.jpg" alt="Фото пользователя ">
-                <p class="country-details__feedback-name">Владимир Мулицин</p>
-              </div>
-            </li>
-          </ul>
+        </div>
+        <ul class="country-details__description-list">
+          <li class="country-details__description-item">
+            <h2 class="country-details__description-title">Греция</h2>
+            <p class="country-details__description-text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+            <button class="country-details__description-button btn">купить тур сейчас</button>
+            <picture class="country-details__photo-container">
+              <source media="(max-width: 1023px)" srcset="./img/Greek_wide.jpg">
+              <img class="country-details__photo" width="430" height="596" src="./img/Greek_feedback.jpg" alt="Фото Греции">
+            </picture>              
+          </li>
+          <li class="country-details__description-item visually-hidden">
+            <h2 class="country-details__description-title">Албания</h2>
+            <p class="country-details__description-text">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
+            <button class="country-details__description-button btn">купить тур сейчас</button>
+            <picture class="country-details__photo-container">
+              <img class="country-details__photo" width="430" height="596" src="./img/Albania_feedback.jpg" alt="Фото Албании">
+            </picture>              
+          </li>
+          <li class="country-details__description-item visually-hidden">
+            <h2 class="country-details__description-title">Македония</h2>
+            <p class="country-details__description-text">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
+            <button class="country-details__description-button btn">купить тур сейчас</button>
+            <picture class="country-details__photo-container">
+              <img class="country-details__photo" width="430" height="596" src="./img/Makedonia_feedback.jpg" alt="Фото Македонии">
+            </picture>              
+          </li>
+          <li class="country-details__description-item visually-hidden">
+            <h2 class="country-details__description-title">Черногория</h2>
+            <p class="country-details__description-text">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
+            <button class="country-details__description-button btn">купить тур сейчас</button>
+            <picture class="country-details__photo-container">
+              <img class="country-details__photo" width="430" height="596" src="./img/Montenegro_feedback.jpg" alt="Фото Черногории">
+            </picture>              
+          </li>
+          <li class="country-details__description-item visually-hidden">
+            <h2 class="country-details__description-title">Хорватия</h2>
+            <p class="country-details__description-text">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
+            <button class="country-details__description-button btn">купить тур сейчас</button>
+            <picture class="country-details__photo-container">
+              <img class="country-details__photo" width="430" height="596" src="./img/Croatia_feedback.jpg" alt="Фото Хорватии">
+            </picture>              
+          </li>
+        </ul>
+        <ul class="country-detail__feedback-list">
+          <li class="country-details__feedback-item">
+            <h3 class="country-details__feedback-title">Отзывы</h3>
+            <p class="country-details__feedback-text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
+            <div class="country-feedback__person-container">
+              <img class="country-details__feedback-face" width="38" height="38" src="./img/Greek_face.jpg" alt="Фото пользователя Влада Голицина">
+              <p class="country-details__feedback-name">Влада Голицина</p>
+            </div>
+          </li>
+          <li class="country-details__feedback-item visually-hidden">
+            <h3 class="country-details__feedback-title">Отзывы</h3>
+            <p class="country-details__feedback-text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+            <div class="country-feedback__person-container">
+              <img class="country-details__feedback-face" width="38" height="38" src="./img/Albania_face.jpg" alt="Фото пользователя Маришка">
+              <p class="country-details__feedback-name">Маришка</p>
+            </div>
+          </li>
+          <li class="country-details__feedback-item visually-hidden">
+            <h3 class="country-details__feedback-title">Отзывы</h3>
+            <p class="country-details__feedback-text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+            <div class="country-feedback__person-container">
+              <img class="country-details__feedback-face" width="38" height="38" src="./img/Makedonia_face.jpg" alt="Фото пользователя ">
+              <p class="country-details__feedback-name">Михаил Кузьмин</p>
+            </div>
+          </li>
+          <li class="country-details__feedback-item visually-hidden">
+            <h3 class="country-details__feedback-title">Отзывы</h3>
+            <p class="country-details__feedback-text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+            <div class="country-feedback__person-container">
+              <img class="country-details__feedback-face" width="38" height="38" src="./img/Montenegro_face.jpg" alt="Фото пользователя ">
+              <p class="country-details__feedback-name">Анастасия Мей</p>
+            </div>
+          </li>
+          <li class="country-details__feedback-item visually-hidden">
+            <h3 class="country-details__feedback-title">Отзывы</h3>
+            <p class="country-details__feedback-text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+            <div class="country-feedback__person-container">
+              <img class="country-details__feedback-face" width="38" height="38" src="./img/Croatia_face.jpg" alt="Фото пользователя ">
+              <p class="country-details__feedback-name">Владимир Мулицин</p>
+            </div>
+          </li>
+        </ul>
       </section>
       <section class="prices" id="prices">
         <h2 class="visually-hidden">Блок с описанием и ценой туров</h2>

@@ -2,7 +2,6 @@
     height: fit-content;
     position: relative; 
     color: $basic-white;
-    display: none;
 }
 
 .intro__background-image {   
@@ -33,6 +32,10 @@
         transform: translate(-50%);
         width: 398px;
         text-align: center;
+    }
+
+    @media(max-width:$mobile-width){
+        width: auto;
     }
 }
 
